@@ -28,6 +28,7 @@ PRODUCT_COPY_FILES += \
 # Ramdisk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/rk30xxnand_ko.ko:root/rk30xxnand_ko.ko \
+    $(LOCAL_PATH)/ramdisk/init.rc:root/init.rc \
     $(LOCAL_PATH)/ramdisk/init.rk30board.rc:root/init.rk30board.rc \
     $(LOCAL_PATH)/ramdisk/init.rk30board.usb.rc:root/init.rk30board.usb.rc \
     $(LOCAL_PATH)/ramdisk/misc.img:root/misc.img \

@@ -11,16 +11,6 @@ on early-init
     export THIRD_VOLUME_STORAGE /mnt/usb_storage
     mkdir /mnt/usb_storage 0000 system system
 
-on fs
-    insmod /rk30xxnand_ko.ko
-    mount ext4 mtd@system /system wait ro noatime nodiratime noauto_da_alloc
-    mount ext4 mtd@userdata /data wait noatime nodiratime nosuid nodev noauto_da_alloc
-    mount ext4 mtd@cache /cache wait noatime nodiratime nosuid nodev noauto_da_alloc
-
-    insmod /system/lib/modules/ump.ko
-    insmod /system/lib/modules/mali.ko
-    insmod /system/lib/modules/rk29-ipp.ko
-
 on post-fs-data
     # we will remap this as /mnt/sdcard with the sdcard fuse tool
     mkdir /data/media 0775 media_rw media_rw
