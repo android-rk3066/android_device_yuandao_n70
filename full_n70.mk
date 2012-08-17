@@ -104,6 +104,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.lockprof.threshold=500 \
     dalvik.vm.dexopt-flags=m=y
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.timezone=Europe/Rome \
+    persist.sys.language=en \
+    persist.sys.country=US \
+    persist.sys.use_dithering=1 \
+    persist.sys.purgeable_assets=0 \
+    windowsmgr.max_events_per_sec=240 \
+    view.touch_slop=2 \
+    view.minimum_fling_velocity=25 \
+    ro.additionalmounts=/mnt/external_sd \
+    ro.vold.switchablepair=/mnt/sdcard,/mnt/external_sd \
+    persist.sys.vold.switchexternal=0
+
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
    
