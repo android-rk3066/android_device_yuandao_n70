@@ -34,6 +34,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/misc.img:root/misc.img \
     $(LOCAL_PATH)/ramdisk/ueventd.rk30board.rc:root/ueventd.rk30board.rc
 
+# init.d scripts
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init.d/03kernel:system/etc/init.d/03kernel \
+    $(LOCAL_PATH)/init.d/04mount:system/etc/init.d/04mount
+
 # Prebuilt configs
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/call-pppd:system/etc/ppp/call-pppd \
