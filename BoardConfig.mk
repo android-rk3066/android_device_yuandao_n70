@@ -47,7 +47,6 @@ BOARD_EGL_CFG := device/yuandao/n70/egl.cfg
 USE_OPENGL_RENDERER := true
 ENABLE_WEBGL := true
 
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_INITRC := device/yuandao/n70/recovery.init.rc
 TARGET_RECOVERY_PRE_COMMAND := "busybox dd if=/misc.img of=/dev/block/mtd/by-name/misc; sync"
 BOARD_HAS_NO_SELECT_BUTTON := true
