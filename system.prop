@@ -10,7 +10,7 @@ ril.pppchannel=/dev/ttyUSB2
 rild.libpath=/system/lib/libril-rk29-dataonly.so
 ril.function.dataonly=1
 
-ro.sf.hwrotation=270
+#ro.sf.hwrotation=270
 sys.hwc.compose_policy=6
 ro.sf.fakerotation=true
 
