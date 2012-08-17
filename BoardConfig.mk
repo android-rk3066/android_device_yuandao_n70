@@ -59,12 +59,12 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_WLAN_DEVICE := RK903
 
 WIFI_DRIVER_MODULE_PATH     := "/system/lib/modules/wlan.ko"
-WIFI_DRIVER_FW_PATH_PARAM   := "/sys/module/wlan/parameters/firmware_path"
-WIFI_DRIVER_FW_PATH_STA     := "/system/etc/firmware/fw_RK903.bin"
-WIFI_DRIVER_FW_PATH_AP      := "/system/etc/firmware/fw_RK903_apsta.bin"
-WIFI_DRIVER_FW_PATH_P2P     := "/system/etc/firmware/fw_RK903_p2p.bin"
-WIFI_DRIVER_MODULE_NAME     := "RK903"
-WIFI_DRIVER_MODULE_ARG      := "iface_name=wlan0 firmware_path=/system/etc/firmware/fw_RK903.bin nvram_path=/system/etc/firmware/nvram_RK903.cal"
+WIFI_DRIVER_FW_PATH_PARAM   := ""
+WIFI_DRIVER_FW_PATH_STA     := ""
+WIFI_DRIVER_FW_PATH_AP      := ""
+WIFI_DRIVER_FW_PATH_P2P     := ""
+WIFI_DRIVER_MODULE_NAME     := "RTL8188"
+WIFI_DRIVER_MODULE_ARG      := ""
 
 BOARD_HAS_LARGE_FILESYSTEM := true
 
