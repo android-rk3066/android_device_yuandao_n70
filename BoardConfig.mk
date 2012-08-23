@@ -50,6 +50,8 @@ ENABLE_WEBGL := true
 TARGET_RECOVERY_INITRC := device/yuandao/n70/recovery.init.rc
 TARGET_RECOVERY_PRE_COMMAND := "busybox dd if=/misc.img of=/dev/block/mtdblock0; sync"
 BOARD_HAS_NO_SELECT_BUTTON := true
+BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun/file"
+BOARD_UMS_2ND_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun1/file"
 
 #WPA_SUPPLICANT_VERSION := VER_0_6_X
 #BOARD_WPA_SUPPLICANT_DRIVER := NL80211
