@@ -8,6 +8,7 @@ lib/libMali.so
 lib/libOMX_Core.so
 lib/libUMP.so
 lib/libapedec.so
+lib/libgui.so
 lib/libion.so
 lib/libjpeghwdec.so
 lib/libjpeghwenc.so
@@ -19,6 +20,8 @@ lib/librkwmapro.so
 lib/libstagefright.so
 lib/libstagefright_foundation.so
 lib/libstagefrighthw.so
+lib/libsurfaceflinger.so
+lib/libsurfaceflinger_client.so
 lib/libvpu.so
 lib/libwpa_client.so
 lib/libyuvtorgb.so
@@ -79,5 +82,6 @@ bin/mount.exfat
 bin/ntfs-3g
 bin/ntfs-3g.probe
 bin/performance
+bin/surfaceflinger
 bin/wpa_cli
 bin/wpa_supplicant
