@@ -46,6 +46,7 @@ TARGET_BOOTLOADER_BOARD_NAME := rk30board
 BOARD_EGL_CFG := device/yuandao/n70/egl.cfg
 USE_OPENGL_RENDERER := true
 ENABLE_WEBGL := true
+BOARD_USE_SKIA_LCDTEXT := true
 
 TARGET_RECOVERY_INITRC := device/yuandao/n70/recovery.init.rc
 TARGET_RECOVERY_PRE_COMMAND := "busybox dd if=/misc.img of=/dev/block/mtdblock0; sync"
