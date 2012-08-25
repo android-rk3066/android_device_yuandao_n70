@@ -15,6 +15,7 @@ on init
     mkdir /cache
     mkdir /emmc
     mkdir /sdcard
+    mkdir /sd-ext
     mount /tmp /tmp tmpfs
     mount vfat /dev/block/mtdblock10 /emmc
     
