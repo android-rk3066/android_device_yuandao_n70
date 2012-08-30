@@ -297,9 +297,7 @@ on boot
 # Set this property so surfaceflinger is not started by system_init
     setprop system_init.startsurfaceflinger 0
 
-# Run sysinit
-    exec /system/bin/sysinit
-
+    class_start first
     class_start core
     class_start main
 
@@ -374,6 +372,10 @@ on property:persist.sys.usb.config=*
 
 ## Daemon processes to be run by init.
 ##
+service sysinit /system/bin/sysinit
+    class first
+    oneshot
+
 service ueventd /sbin/ueventd
     class core
     critical
