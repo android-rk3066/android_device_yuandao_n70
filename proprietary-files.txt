@@ -1,6 +1,5 @@
 # apps
 app/RkExplorer.apk
-app/RkVideoPlayer.apk
 
 # libs
 lib/libEGL.so
