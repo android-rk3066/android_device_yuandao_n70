@@ -59,13 +59,12 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_UMS_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun/file"
 BOARD_UMS_2ND_LUNFILE := "/sys/class/android_usb/android0/f_mass_storage/lun1/file"
 
-#WPA_SUPPLICANT_VERSION := VER_0_6_X
-#BOARD_WPA_SUPPLICANT_DRIVER := NL80211
-#BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_bcmdhd
-#BOARD_HOSTAPD_DRIVER := NL80211
-#BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_bcmdhd
-BOARD_WLAN_DEVICE := RK903
-
+BOARD_WLAN_DEVICE := rtl8192cu
+WPA_SUPPLICANT_VERSION := VER_0_8_X
+BOARD_WPA_SUPPLICANT_DRIVER := WEXT
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_rtl
+BOARD_HOSTAPD_DRIVER        := WEXT
+BOARD_HOSTAPD_PRIVATE_LIB   := lib_driver_cmd_rtl
 WIFI_DRIVER_MODULE_PATH     := "/system/lib/modules/wlan.ko"
 WIFI_DRIVER_FW_PATH_PARAM   := ""
 WIFI_DRIVER_FW_PATH_STA     := ""
